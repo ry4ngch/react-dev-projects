@@ -17,14 +17,8 @@
 .vscode/
 .idea/
 
-# Ignore package-lock.json if you don't want to commit it (optional)
-package-lock.json
-
 # Ignore npm debug log files
 npm-debug.log*
-
-# Ignore yarn lock file if using npm (optional)
-yarn.lock
 
 # Ignore coverage folder (useful for testing)
 coverage/
