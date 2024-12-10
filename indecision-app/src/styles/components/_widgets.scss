@@ -1,3 +1,6 @@
+@use "sass:color";
+@use '../base/settings' as *;
+
 .widget {
   background: $light-blue;
   margin-bottom: $xl-size;
@@ -8,7 +11,7 @@
   margin: none;
   padding: $l-size;
   text-align: center;
-  border-bottom: 1px solid lighten($light-blue, 10%);
+  border-bottom: 1px solid color.adjust($light-blue, $lightness: 10%, $space: hsl);
 }
 
 .widget-header{

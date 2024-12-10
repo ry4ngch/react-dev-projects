@@ -1,3 +1,5 @@
+@use '../base/settings' as *;
+
 .header {
   background: $off-black;
   margin-bottom: $xl-size;

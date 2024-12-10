@@ -1,9 +1,10 @@
-@import './base/settings';
-@import './base/base';
-@import './components/container';
-@import './components/header';
-@import './components/button';
-@import './components/widgets';
-@import './components/option';
-@import './components/addOption';
-@import './components/modal';
+// forward shared settings and base styles
+@use './base/settings' as *;
+@use './base/base' as *;
+@use './components/container' as *;
+@use './components/header' as *;
+@use './components/button' as *;
+@use './components/widgets' as *;
+@use './components/option' as *;
+@use './components/addOption' as *;
+@use './components/modal' as *;

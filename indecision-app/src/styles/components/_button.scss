@@ -1,7 +1,10 @@
+@use "sass:color";
+@use '../base/settings' as *;
+
 .big-button{
   background-color: $purple;
   border: none;
-  border-bottom: .6rem solid darken($purple, 10%);
+  border-bottom: .6rem solid color.adjust($purple, $lightness: -10%, $space: hsl);
   color: white;
   font-weight: bold;
   font-size: $l-size;
@@ -18,7 +21,7 @@
 .button{
   background: $purple;
   border: none;
-  border-bottom: .3rem solid darken($purple, 10%);
+  border-bottom: .3rem solid color.adjust($purple, $lightness: -10%, $space: hsl);
   color: white;
   font-weight: 500;
   padding: $s-size;

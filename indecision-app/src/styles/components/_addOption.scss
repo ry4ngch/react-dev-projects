@@ -1,3 +1,6 @@
+@use "sass:color";
+@use '../base/settings' as *;
+
 .addOptions{
   display: flex;
   padding: $m-size;
@@ -8,7 +11,7 @@
   flex-grow: 1;
   background: $dark-blue;
   border: none;
-  border-bottom: .3rem solid darken($dark-blue, 10%);
+  border-bottom: .3rem solid color.adjust($dark-blue, $lightness: -10%, $space: hsl);
   margin: 0 0 $s-size 0;
   color: $off-white;
   padding: $s-size;

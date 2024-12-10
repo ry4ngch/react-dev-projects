@@ -1,10 +1,12 @@
 const path = require('path');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: "./src/app.js",
+  mode: 'development',
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: "bundle.js"
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -15,7 +17,8 @@ module.exports = {
         options: {
           presets: ['@babel/preset-env']
         }
-      },{
+      },
+      {
         test: /\.s?css$/, //configuring <style> tag in html using webpack
         use: [
           'style-loader',
@@ -27,6 +30,18 @@ module.exports = {
   },
   devtool: "eval-cheap-module-source-map",
   devServer: {
-    contentBase: path.join(__dirname, 'public')
-  }
+    static: path.join(__dirname, 'public'),
+    open: 'chrome', // Automatically open Chrome
+    hot: true, // Enable Hot Module Replacement
+    port: 8080, // Customize the port if needed
+  },
+  resolve: {
+    extensions: ['.js', '.scss']
+  },
+  optimization: {
+    splitChunks: false
+  },
+  plugins: [
+    ...(process.env.NODE_ENV === 'development' ? [new BundleAnalyzerPlugin()] : []) // Only include BundleAnalyzerPlugin in development
+  ]
 }
