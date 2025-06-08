@@ -1,5 +1,5 @@
-# Project Title
-🍔 Burger App
+# 🍔 Burger App
+A Simple Burger Builder App
 
 ## Table of Content:
 

@@ -1,5 +1,5 @@
-# Project Title
-🍔 Burger App With Redux
+# Burger Builder Application
+🍔 Burger Builder App With Redux
 
 ## Table of Content:
 
@@ -11,11 +11,11 @@
 - [License](#license)
 
 ## About The App
-Burger App Redux is is a burger builder application developed as part of the "React - The Complete Guide (incl. Hooks, React Router, Redux)" Udemy course by Maximilian Schwarzmüller. The app allows users to build custom burgers, view order summaries, and place orders — demonstrating core React concepts and best practices in a real-world project. This application is similar to the other burger app in this repository. However, the other burger app does not use redux but the internal build react context API.
+Burger App Redux is a burger builder application developed as part of the "React - The Complete Guide (incl. Hooks, React Router, Redux)" Udemy course by Maximilian Schwarzmüller. The app allows users to build custom burgers, view order summaries, and place orders — demonstrating core React concepts and best practices in a real-world project. This application is similar to the other burger app in this repository. However, the other burger app does not use redux but the internal build react context API.
 
 This versions also contains the firebase implementation of auth login and orders are store remotely on google's firebase.
 
-[!NOTE]
+> [!NOTE]
 > This project is based on the Udemy React course with Maximilian Schwarzmüller.
 
 ## Features
